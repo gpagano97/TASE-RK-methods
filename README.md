@@ -11,6 +11,7 @@ The codes reported here for the implementation of TASE-RK methods are written in
 These codes are explained in detail in the manuscript “A MATLAB implementation of TASE-RK methods”, by Dajana Conte, Giovanni Pagano, Beatrice Paternoster (Department of Mathematics, University of Salerno, Italy), accepted for publication in the Journal of Approximation Software (JAS).
 
 # Input and output arguments
+The function TASERK.m applies the chosen TASE-RK method to solve a selected initial value problem. We describe the input and output arguments of TASERK.m below.
 
 • Input arguments
 
