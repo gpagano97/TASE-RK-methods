@@ -72,36 +72,9 @@ Total CPU time in seconds taken by the chosen TASE-RK method.
 # Test case
 Here, we test the code for an example case. In particular, we show the application of the function TASERK.m in solving the well known Euler’s problem [https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)]. To do this, just run the main code exampleEuler.m. This code uses the functions funEuler.m, jacEuler.m, jacEulerfix.m, and of course TASERK.m.
 
-%% Main code: exampleEuler.m
-Fun = @funEuler;
-Tmethod = [40]; % Select the TASE-RK method
-nTmethods = length(Tmethod);
-jacup = 0; % We want 'constant Jacobian'
-if (jacup == 0)
-    Jac = @jacEulerfix;
-elseif (jacup == 1)
-    Jac = @jacEuler;
-end
+As you can see from line 3 of exampleEuler.m, in this case we apply only the TASE-RK method of order $p=s=4$. Furthermore, from line 5, note that we fix a constant approximation of the Jacobian (i.e. the exact Jacobian fixed in the first time grid point $t_0$), thus deciding not to update it at each step. 
 
-% Initial conditions
-global y0
-tspan = [0 10];
-y0 = [1;0;0.9];
-N = 5000; % Number of grid intervals
-
-% Compute a reference solution with ode15s
-options = odeset('RelTol',5e-14,'AbsTol',5e-14);
-[tode15s,yode15s] = ode15s(@funEuler,tspan,y0,options);
-YrefT = yode15s(end,:)';
-
-[yTTRK,yTRK,t,CPUtimeTRK] = TASERK(N,tspan,y0,Fun,Jac,Tmethod,jacup);
-
-% Print results
-format short e
-errT_TRK = norm(yTTRK-YrefT,inf) % Error
-CPUtimeTRK % CPU time
-
-Similarly, running the main code exampleBurgers.m, which uses the functions funBurgers.m, jacBurgers.m, jacBurgersfix.m, and of course TASERK.m, it is possible to solve the famous Burgers' equation [https://en.wikipedia.org/wiki/Burgers%27_equation] with all the TASE-RK methods (i.e. of order $p=s=2,3,4$).
+Similarly, running the main code exampleBurgers.m, which uses the functions funBurgers.m, jacBurgers.m, jacBurgersfix.m, and of course TASERK.m, it is possible to solve the famous Burgers' equation [https://en.wikipedia.org/wiki/Burgers%27_equation] with all the TASE-RK methods (i.e. of order $p=s=2,3,4$), after a spatial semi-discretization of the problem (method of lines) done by means of finite differences of order four.
 
 
 # References
