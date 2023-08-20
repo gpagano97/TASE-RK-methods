@@ -1,7 +1,7 @@
 # Implementation of TASE-RK-methods (by Dajana Conte, Giovanni Pagano, Beatrice Paternoster, Department of Mathematics, University of Salerno, Italy) 
 TASE-RK-methods [Calvo, Montijano, Rández, “A note on the stability of time-accurate and highly-stable explicit operators for stiff differential equations”, J. Comput. Phys. 436 (2021), 110316] are linearly implicit numerical schemes for solving stiff initial value problems of the type $y'(t)=f(t,y(t))$,  $y(t_0)=y_0$, $t \in [t_0,t_e]$, $f:\mathbb{R}\times \mathbb{R}^d \rightarrow \mathbb{R}^d$ (1).
 
-Such numerical schemes require the solution of s*p (s = number of stages, p = order of the method) linear systems per step involving the Jacobian matrix of the problem. The proposed implementation allows two options:
+Such numerical schemes require the solution of $s \times p$ ($s$ = number of stages, $p$ = order of the method) linear systems per step involving the Jacobian matrix of the problem. The proposed implementation allows two options:
 - update the Jacobian of the problem at each step;
 - fix a constant approximation of the Jacobian for all the time integration.
 
@@ -38,11 +38,11 @@ Function which returns the Jacobian matrix $J_f$ of the problem (1) that the use
 
 Array with the TASE-RK methods to apply; in particular:
 
-• 20 corresponds to the TASE-RK with s = p = 2, using the midpoint rule as underlying explicit RK;
+• 20 corresponds to the TASE-RK with $s = p = 2$, using the midpoint rule as underlying explicit RK;
 
-• 30 corresponds to the TASE-RK with s = p = 3, using the Ralston’s method as underlying explicit RK;
+• 30 corresponds to the TASE-RK with $s = p = 3$, using the Ralston’s method as underlying explicit RK;
 
-• 40 corresponds to the TASE-RK with s = p = 4, using the Kutta’s method as underlying explicit RK.
+• 40 corresponds to the TASE-RK with $s = p = 4$, using the Kutta’s method as underlying explicit RK.
 
 For example, if we want to use methods 20 and 30, then Method=[20,30]. We will later show an example where we apply all the TASE-RK methods using the same main
 program.
@@ -55,7 +55,7 @@ Parameter which is equal to 0 if the user wants to use constant $J_n$, i.e. $f_y
 
 - yT - double array
 
-Column vector of length d with the numerical solution computed by the chosen TASE-RK method at last grid point $t_e$.
+Column vector of length $d$ with the numerical solution computed by the chosen TASE-RK method at last grid point $t_e$.
 
 - y - double array
   
@@ -63,7 +63,7 @@ Matrix of size $d \times (N +1)$ having in column $n+1$ the numerical solution $
 
 - t - double array
   
-Row vector of length N+1 with all the discrete grid points ${t_n =t_0+n h;n = 0,\dots,N;t_N =t_e}$.
+Row vector of length $N+1$ with all the discrete grid points $[t_n =t_0+n h;n = 0,\dots,N;t_N =t_e]$.
 
 - CPUtime - double scalar
   
