@@ -69,6 +69,7 @@ Row vector of length $N+1$ with all the discrete grid points $[t_n =t_0+n h;n = 
 Total CPU time in seconds taken by the chosen TASE-RK method.
 
 # Test case
-Here we test the code for an example case. Each epoch represents one loop over the training data, which is typically random. The random draws can be either be with replacement (chance of using same training data in the same epoch) or without replacement. We compare both in this example.
+Here, we test the code for an example case. In particular, we show the application of the function TASERK.m in solving the well known
+Euler’s problem [https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)].
 
 # References
