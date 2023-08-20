@@ -1,7 +1,7 @@
 # Authors: Dajana Conte, Giovanni Pagano, Beatrice Paternoster (Department of Mathematics, University of Salerno, Italy).
 Some information:
 - Dajana Conte webpage https://docenti.unisa.it/020280/home; email dajconte@unisa.it;
-- Giovanni Pagano webpage https://www.researchgate.net/profile/Giovanni-Pagano-2; email gpagano@unisa.it;
+- Giovanni Pagano (corresponding) webpage https://www.researchgate.net/profile/Giovanni-Pagano-2; email gpagano@unisa.it;
 - Beatrice Paternoster webpage https://docenti.unisa.it/000793/home; email beapat@unisa.it.
 
 # Implementation of TASE-RK methods  
