@@ -74,13 +74,15 @@ Here, we test the code for an example case. In particular, we show the applicati
 
 As you can see from line 3 of exampleEuler.m, in this case we apply only the TASE-RK method of order $p=s=4$. Furthermore, from line 5, note that we fix a constant approximation of the Jacobian (i.e. the exact Jacobian fixed at the first time grid point $t_0$), thus deciding not to update it at each step. From line 12 to line 16 we set the initial conditions, and from line 18 to line 21 we compute a reference solution in order to be able to calculate TASE-RK errors. In line 23 we apply the selected TASE-RK method.
 
-The output is as follows.
+The output is as follows:
 
 errT_TRK =
-   3.3776e-08
+   3.3776e-08;
    
 CPUtimeTRK =
-   6.4062e-01
+   6.4062e-01.
+
+The first corresponds to the relative error committed by the TASE-RK method with respect to the reference solution with the infinity norm. The second corresponds to the CPU time used by the TASE-RK method.
 
 Similarly, running the main code exampleBurgers.m, which uses the functions funBurgers.m, jacBurgers.m, jacBurgersfix.m, and of course TASERK.m, it is possible to solve the famous Burgers' equation [https://en.wikipedia.org/wiki/Burgers%27_equation] with all the TASE-RK methods (i.e. of order $p=s=2,3,4$), after a spatial semi-discretization of the problem (method of lines) done by means of finite differences of order four.
 
