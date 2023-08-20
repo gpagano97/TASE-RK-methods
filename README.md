@@ -49,7 +49,7 @@ program.
 
 - jacup - integer scalar
   
-Parameter which is equal to 0 if the user wants to use constant $J_n$, 1 otherwise.
+Parameter which is equal to 0 if the user wants to use constant $J_n (= f_y(t_n,y_n))$, 1 otherwise.
 
 • Output arguments
 
