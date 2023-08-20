@@ -76,8 +76,6 @@ As you can see from line 3 of exampleEuler.m, in this case we apply only the TAS
 
 The output is as follows.
 
-> > exampleEuler
-
 errT_TRK =
    3.3776e-08
    
