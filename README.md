@@ -84,7 +84,7 @@ errT_TRK =
 CPUtimeTRK =
    6.4062e-01.
 
-The first corresponds to the relative error committed by the TASE-RK method with respect to the reference solution with the infinity norm. The second corresponds to the CPU time used by the TASE-RK method.
+The first corresponds to the relative error committed by the TASE-RK method with respect to the reference solution with the infinity norm. The second corresponds to the total CPU time used by the TASE-RK method.
 
 Similarly, running the main code exampleBurgers.m, which uses the functions funBurgers.m, jacBurgers.m, jacBurgersfix.m, and of course TASERK.m, it is possible to solve the famous Burgers' equation [https://en.wikipedia.org/wiki/Burgers%27_equation] with all the TASE-RK methods (i.e. of order $p=s=2,3,4$), after a spatial semi-discretization of the problem (method of lines) done by means of finite differences of order four.
 
