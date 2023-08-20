@@ -31,9 +31,11 @@ Column vector with the initial condition $y_0 \in \mathbb{R}^d$.
 Function which returns the vector field $f$, evaluated at $(t,y)$, of the problem (1) that the user wants to solve; $t \in  \mathbb{R}$, $y \in  \mathbb{R}^d$, constitute the input arguments of Fun, and the column vector $f(t,y) \in  \mathbb{R}^d$ is the output.
 
 • Jac - function handle
+
 Function which returns the Jacobian matrix $J_f$ of the problem (1) that the user wants to solve, evaluated at a point $(t,y)$, or a suitable fixed approximation of $J_f$; in the first case, $t \in \mathbb{R}$, $y \in \mathbb{R}^d$, constitute the input arguments of Jac, and the matrix $f_y(t,y) \in \mathbb{R}^{d,d}$ is the output.
 
 • Method - integer array
+
 Array with the TASE-RK methods to apply; in particular:
 
 - 20 corresponds to the TASE-RK with s = p = 2, using the midpoint rule as under-
