@@ -49,24 +49,24 @@ program.
 
 - jacup - integer scalar
   
-Parameter which is equal to 0 if the user wants to use constant $J_n (= f_y(t_n,y_n))$, 1 otherwise.
+Parameter which is equal to 0 if the user wants to use constant $J_n$, i.e. $f_y(t_n,y_n)$, 1 otherwise.
 
 • Output arguments
 
 - yT - double array
 
-Column vector of length d with the numerical solution computed by the chosen TASE-
-RK method at last grid point te.
+Column vector of length d with the numerical solution computed by the chosen TASE-RK method at last grid point $t_e$.
 
 - y - double array
-Matrix of size d ×(N +1) having in column n+1 the numerical solution yn compute by
-the chosen TASE-RK method.
+  
+Matrix of size $d \times (N +1)$ having in column $n+1$ the numerical solution $y_n$ computed by the chosen TASE-RK method.
 
 - t - double array
-Row vector of length N+1 with all the discrete grid points {tn =t0+nh;n = 0,...,N;tN =
-te}.
+- 
+Row vector of length N+1 with all the discrete grid points $\{t_n =t_0+n h;n = 0,\dots,N;t_N =t_e\}$.
 
 - CPUtime - double scalar
+  
 Total CPU time in seconds taken by the chosen TASE-RK method.
 
 # Test case
