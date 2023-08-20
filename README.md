@@ -62,8 +62,8 @@ Column vector of length d with the numerical solution computed by the chosen TAS
 Matrix of size $d \times (N +1)$ having in column $n+1$ the numerical solution $y_n$ computed by the chosen TASE-RK method.
 
 - t - double array
-- 
-Row vector of length N+1 with all the discrete grid points $\{t_n =t_0+n h;n = 0,\dots,N;t_N =t_e\}$.
+  
+Row vector of length N+1 with all the discrete grid points ${t_n =t_0+n h;n = 0,\dots,N;t_N =t_e}$.
 
 - CPUtime - double scalar
   
