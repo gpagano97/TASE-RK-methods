@@ -7,7 +7,7 @@ Such numerical schemes require the solution of s*p (s = number of stages, p = or
 In the latter case, the cost of the method drops drastically, while the order of consistency is preserved. However, if the chosen Jacobian approximation is not 'good', stability issues may be encountered.
 
 The codes reported here for the implementation of TASE-RK methods are written in Matlab language. 
-They are explained in detail in the manuscript “A MATLAB implementation of TASE-RK methods”, by Dajana Conte, Giovanni Pagano, Beatrice Paternoster (Department of Mathematics, University of Salerno, Italy) accepted for publication in the Journal of Approximation Software (JAS).
+These codes are explained in detail in the manuscript “A MATLAB implementation of TASE-RK methods”, by Dajana Conte, Giovanni Pagano, Beatrice Paternoster (Department of Mathematics, University of Salerno, Italy) accepted for publication in the Journal of Approximation Software (JAS).
 
 # Input and output arguments
 
