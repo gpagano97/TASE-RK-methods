@@ -3,6 +3,7 @@ TASE-RK-methods [Calvo, Montijano, Rández, “A note on the stability of time-a
 Such numerical schemes require the solution of s*p (s = number of stages, p = order of the method) linear systems per step involving the Jacobian matrix of the problem. The proposed implementation allows two options:
 - update the Jacobian of the problem at each step;
 - fix a constant approximation of the Jacobian for all the time integration.
+
 In the latter case, the cost of the method drops drastically, while the order of consistency is preserved.
 
 The codes reported here for the implementation of TASE-RK methods are written in Matlab language. 
