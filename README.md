@@ -70,8 +70,11 @@ Row vector of length $N+1$ with all the discrete grid points $[t_n =t_0+n h;n = 
 Total CPU time in seconds taken by the chosen TASE-RK method.
 
 # Test case
-Here, we test the code for an example case. In particular, we show the application of the function TASERK.m in solving the well known Euler’s problem [https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)]. To do this, just run the main code exampleEuler.m. This code uses the functions funEuler.m, jacEuler.m, jacEulerfix.m.
+Here, we test the code for an example case. In particular, we show the application of the function TASERK.m in solving the well known Euler’s problem [https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)]. To do this, just run the main code exampleEuler.m. This code uses the functions funEuler.m, jacEuler.m, jacEulerfix.m, and of course TASERK.m.
+
+Similarly, running the main code exampleBurgers.m, which uses the functions funBurgers.m, jacBurgers.m, jacBurgersfix.m, and of course TASERK.m, it is possible to solve the famous Burgers' equation [https://en.wikipedia.org/wiki/Burgers%27_equation] with all the TASE-RK methods (i.e. of order $p=2,3,4$).
+
 
 # References
-- M. Calvo, J.I. Montijano, L. Rández, “A note on the stability of time-accurate and highly-stable explicit operators for stiff differential equations”, J. Comput. Phys. 436 (2021), 110316.
+- M. Calvo, J. I. Montijano, L. Rández, “A note on the stability of time-accurate and highly-stable explicit operators for stiff differential equations”, J. Comput. Phys. 436 (2021), 110316.
 - D. Conte, G. Pagano, B. Paternoster, “A MATLAB implementation of TASE-RK methods”, J. Approx. Softw. accepted.
