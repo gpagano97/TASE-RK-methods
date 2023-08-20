@@ -1,5 +1,6 @@
 # Authors
 The authors are: Dajana Conte, Giovanni Pagano, Beatrice Paternoster (Department of Mathematics, University of Salerno, Italy).
+
 Some information about the authors:
 - Dajana Conte webpage https://docenti.unisa.it/020280/home; email dajconte@unisa.it;
 - Giovanni Pagano (corresponding) webpage https://www.researchgate.net/profile/Giovanni-Pagano-2; email gpagano@unisa.it;
