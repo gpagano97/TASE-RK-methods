@@ -1,5 +1,5 @@
 # Implementation of TASE-RK-methods (by Dajana Conte, Giovanni Pagano, Beatrice Paternoster, Department of Mathematics, University of Salerno, Italy) 
-TASE-RK-methods [Calvo, Montijano, Rández, “A note on the stability of time-accurate and highly-stable explicit operators for stiff differential equations”, J. Comput. Phys. 436 (2021), 110316] are linearly implicit numerical schemes for solving stiff initial value problems of the type $y'(t)=f(t,y(t))$,  $y(t_0)=y_0$, $t \in [t_0,t_e]$, $f:\mathbb{R}\times \mathbb{R}^d \rightarrow \mathbb{R}^d$ (1).
+TASE-RK-methods [https://www.sciencedirect.com/science/article/pii/S0021999121002114] are linearly implicit numerical schemes for solving stiff initial value problems of the type $y'(t)=f(t,y(t))$,  $y(t_0)=y_0$, $t \in [t_0,t_e]$, $f:\mathbb{R}\times \mathbb{R}^d \rightarrow \mathbb{R}^d$ (1).
 
 Such numerical schemes require the solution of $s \times p$ ($s$ = number of stages, $p$ = order of the method) linear systems per step involving the Jacobian matrix of the problem. The proposed implementation allows two options:
 - update the Jacobian of the problem at each step;
@@ -73,3 +73,5 @@ Here, we test the code for an example case. In particular, we show the applicati
 Euler’s problem [https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)].
 
 # References
+- Calvo, Montijano, Rández, “A note on the stability of time-accurate and highly-stable explicit operators for stiff differential equations”, J. Comput. Phys. 436 (2021), 110316.
+- 
