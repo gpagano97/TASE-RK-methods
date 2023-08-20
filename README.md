@@ -38,38 +38,35 @@ Function which returns the Jacobian matrix $J_f$ of the problem (1) that the use
 
 Array with the TASE-RK methods to apply; in particular:
 
-• 20 corresponds to the TASE-RK with s = p = 2, using the midpoint rule as under-
-lying explicit RK;
+• 20 corresponds to the TASE-RK with s = p = 2, using the midpoint rule as underlying explicit RK;
 
-• 30 corresponds to the TASE-RK with s = p = 3, using the Ralston’s method as
-underlying explicit RK;
+• 30 corresponds to the TASE-RK with s = p = 3, using the Ralston’s method as underlying explicit RK;
 
-• 40 corresponds to the TASE-RK with s = p = 4, using the Kutta’s method as un-
-derlying explicit RK.
+• 40 corresponds to the TASE-RK with s = p = 4, using the Kutta’s method as underlying explicit RK.
 
-For example, if we want to use methods 20 and 30, then Method=[20,30]. We will
-later show an example where we apply all the TASE-RK methods using the same main
+For example, if we want to use methods 20 and 30, then Method=[20,30]. We will later show an example where we apply all the TASE-RK methods using the same main
 program.
-• jacup - integer scalar
-Parameter which is equal to 0 if the user wants to use constant Jn, 1 otherwise.
-Output arguments
-• yT - double array
+
+- jacup - integer scalar
+  
+Parameter which is equal to 0 if the user wants to use constant $J_n$, 1 otherwise.
+
+• Output arguments
+
+- yT - double array
 
 Column vector of length d with the numerical solution computed by the chosen TASE-
 RK method at last grid point te.
 
-• y - double array
+- y - double array
 Matrix of size d ×(N +1) having in column n+1 the numerical solution yn compute by
 the chosen TASE-RK method.
-• t - double array
+
+- t - double array
 Row vector of length N+1 with all the discrete grid points {tn =t0+nh;n = 0,...,N;tN =
 te}.
 
-D. Conte, G. Pagano, B. Paternoster 8/21
-
-A MATLAB implementation of TASE-RK methods
-
-• CPUtime - double scalar
+- CPUtime - double scalar
 Total CPU time in seconds taken by the chosen TASE-RK method.
 
 # Test case
