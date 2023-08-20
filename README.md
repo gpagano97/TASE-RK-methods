@@ -49,7 +49,7 @@ For example, if we want to use methods 20 and 30, then Method=[20,30]. The main 
 
 - jacup - integer scalar
   
-Parameter which is equal to 0 if the user wants to use constant $J_n$, i.e. $f_y(t_n,y_n)$, 1 otherwise.
+Parameter which is equal to 0 if the user wants 'constant Jacobian', 1 otherwise.
 
 • Output arguments
 
