@@ -44,8 +44,7 @@ Array with the TASE-RK methods to apply; in particular:
 
 • 40 corresponds to the TASE-RK with $s = p = 4$, using the Kutta’s method as underlying explicit RK.
 
-For example, if we want to use methods 20 and 30, then Method=[20,30]. We will later show an example where we apply all the TASE-RK methods using the same main
-program.
+For example, if we want to use methods 20 and 30, then Method=[20,30]. The main program exampleBurgers.m, e.g., applies all the TASE-RK methods for the solution of the Burgers' equation.
 
 - jacup - integer scalar
   
@@ -70,5 +69,6 @@ Row vector of length $N+1$ with all the discrete grid points $[t_n =t_0+n h;n = 
 Total CPU time in seconds taken by the chosen TASE-RK method.
 
 # Test case
+Here we test the code for an example case. Each epoch represents one loop over the training data, which is typically random. The random draws can be either be with replacement (chance of using same training data in the same epoch) or without replacement. We compare both in this example.
 
 # References
