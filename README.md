@@ -12,39 +12,39 @@ These codes are explained in detail in the manuscript “A MATLAB implementation
 
 # Input and output arguments
 
-Input arguments
+• Input arguments
 
-• N - integer scalar
+- N - integer scalar
 
 Number of (equally spaced) discrete time intervals into which the user decides to subdivide the continuous time grid $[t_0,t_e]$.
 
-• tspan - double array
+- tspan - double array
 
 Row vector of length two containing the first and last grid points $t_0$, $t_e$, respectively.
 
-• y0 - double array
+- y0 - double array
 
 Column vector with the initial condition $y_0 \in \mathbb{R}^d$.
 
-• Fun - function handle
+- Fun - function handle
 
 Function which returns the vector field $f$, evaluated at $(t,y)$, of the problem (1) that the user wants to solve; $t \in  \mathbb{R}$, $y \in  \mathbb{R}^d$, constitute the input arguments of Fun, and the column vector $f(t,y) \in  \mathbb{R}^d$ is the output.
 
-• Jac - function handle
+- Jac - function handle
 
 Function which returns the Jacobian matrix $J_f$ of the problem (1) that the user wants to solve, evaluated at a point $(t,y)$, or a suitable fixed approximation of $J_f$; in the first case, $t \in \mathbb{R}$, $y \in \mathbb{R}^d$, constitute the input arguments of Jac, and the matrix $f_y(t,y) \in \mathbb{R}^{d,d}$ is the output.
 
-• Method - integer array
+- Method - integer array
 
 Array with the TASE-RK methods to apply; in particular:
 
-- 20 corresponds to the TASE-RK with s = p = 2, using the midpoint rule as under-
+• 20 corresponds to the TASE-RK with s = p = 2, using the midpoint rule as under-
 lying explicit RK;
 
-- 30 corresponds to the TASE-RK with s = p = 3, using the Ralston’s method as
+• 30 corresponds to the TASE-RK with s = p = 3, using the Ralston’s method as
 underlying explicit RK;
 
-- 40 corresponds to the TASE-RK with s = p = 4, using the Kutta’s method as un-
+• 40 corresponds to the TASE-RK with s = p = 4, using the Kutta’s method as un-
 derlying explicit RK.
 
 For example, if we want to use methods 20 and 30, then Method=[20,30]. We will
