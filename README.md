@@ -77,4 +77,4 @@ Similarly, running the main code exampleBurgers.m, which uses the functions funB
 
 # References
 - M. Calvo, J. I. Montijano, L. Rández, “A note on the stability of time-accurate and highly-stable explicit operators for stiff differential equations”, J. Comput. Phys. 436 (2021), 110316.
-- D. Conte, G. Pagano, B. Paternoster, “A MATLAB implementation of TASE-RK methods”, J. Approx. Softw. accepted.
+- D. Conte, G. Pagano, B. Paternoster, “A MATLAB implementation of TASE-RK methods”, J. Approx. Softw. (2023).
