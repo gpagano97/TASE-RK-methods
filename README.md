@@ -1,4 +1,5 @@
 # Authors: Dajana Conte, Giovanni Pagano, Beatrice Paternoster (Department of Mathematics, University of Salerno, Italy).
+
 # Implementation of TASE-RK methods  
 TASE-RK-methods [https://www.sciencedirect.com/science/article/pii/S0021999121002114] are linearly implicit numerical schemes for solving stiff initial value problems of the type $y'(t)=f(t,y(t))$,  $y(t_0)=y_0$, $t \in [t_0,t_e]$, $f:\mathbb{R}\times \mathbb{R}^d \rightarrow \mathbb{R}^d$ (1).
 
