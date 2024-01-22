@@ -98,3 +98,6 @@ Similarly, running the main code exampleBurgers.m, which uses the functions funB
 # References
 - M. Calvo, J. I. Montijano, L. Rández, “A note on the stability of time-accurate and highly-stable explicit operators for stiff differential equations”, J. Comput. Phys. 436 (2021), 110316.
 - D. Conte, G. Pagano, B. Paternoster, “A MATLAB implementation of TASE-RK methods”, J. Approx. Softw. (2023), to appear.
+
+# Acknowledgments
+The authors are members of the GNCS group. This work is supported by GNCS-INDAM project and by the Italian Ministry of University and Research (MUR), through the PRIN 2020 project (No. 2020JLWP23) “Integrated Mathematical Approaches to Socio–Epidemiological Dynamics” (CUP: E15F21005420006) and the PRIN 2017 project (No. 2017JYCLSF) “Structure preserving approximation of evolutionary problems”.
